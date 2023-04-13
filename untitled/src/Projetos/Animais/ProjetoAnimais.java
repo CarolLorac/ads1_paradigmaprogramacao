@@ -1,12 +1,17 @@
 package projetos.animais;// package Aula1;
 
-import projetos.Animais.Entities.Aquatico;
-import projetos.Animais.Entities.Mamifero;
+import projetos.Projeto;
+import projetos.animais.entities.Aquatico;
+import projetos.animais.entities.Mamifero;
 
-public class ProjetoAnimais 
+public class ProjetoAnimais extends Projeto
 {
-    public void Execute() 
+    @Override
+    public void Executar() 
     {
+        System.out.println("\n***********************");
+        System.out.println("ANIMAIS\n");
+
         System.out.println("Os animais Mamiferos: " + Mamifero.caraAnimal1 + Mamifero.caraAnimal2
                             + Mamifero.caraMamiferos1 + Mamifero.caraMamiferos2);
 

@@ -1,14 +1,21 @@
-import java.util.Scanner;
 package projetos.chatbot; 
+import java.util.Scanner;
 
-public class ChatBot 
+import projetos.Projeto;
+
+public class ChatBot extends Projeto
 {
-   public void Execute() 
+   @Override
+   public void Executar() 
    {
-      Scanner scanner = new Scanner(System.in);
+      Scanner sc = new Scanner(System.in);
+
+      
+      System.out.println("\n***********************");
+      System.out.println("CHAT BOT\n");
 
       System.out.println("Qual o seu dia da semana favorito? (1 - Segunda, 2 - Terça, 3 - Quarta, 4 - Quinta, 5 - Sexta, 6 - Sábado, 7 - Domingo)");
-      String str = scanner.next();
+      String str = sc.next();
       int dia = Integer.parseInt(str);
 
       switch (dia) {
@@ -37,8 +44,6 @@ public class ChatBot
             System.out.println("Dia não reconhecido");
             break;
       }
-
-      scanner.close();
    }
 
 }

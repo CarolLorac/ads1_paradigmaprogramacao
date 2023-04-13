@@ -6,15 +6,8 @@ import java.util.Scanner;
 public class OrdemServicoMenu {
 
     public void menu(Scanner sc){
-        while(true){
-//            System.out.println("""
-//                    Cadastro de Ordem de Serviço
-//                    1 - Lista
-//                    2 - Incluir
-//                    3 - Atualizar
-//                    4 - Excluir
-//                    0 - Sair
-//                    """);
+        while(true)
+        {
             System.out.println("Cadastro de Ordem de Servico");
             System.out.println("1 - Lista");
             System.out.println("2 - Incluir");
@@ -22,23 +15,35 @@ public class OrdemServicoMenu {
             System.out.println("4 - Excluir");
             System.out.println("0 - Sair");
             String opcao = sc.nextLine();
-            if (opcao.equals("1")){
+            if (opcao.equals("1"))
+            {
                 listar();
-            } else if (opcao.equals("2")) {
+            } 
+            else if (opcao.equals("2")) 
+            {
                 incluir(sc);
-            } else if (opcao.equals("3")) {
+            } 
+            else if (opcao.equals("3")) 
+            {
                 atualizar(sc);
-            } else if (opcao.equals("4")) {
+            } 
+            else if (opcao.equals("4")) 
+            {
                 excluir(sc);
-            } else if (opcao.equals("0")) {
+            } 
+            else if (opcao.equals("0")) 
+            {
                 break;
-            }else {
+            }
+            else 
+            {
                 System.out.println("Opção não conhecida: " + opcao);
             }
         }
     }
 
-    private void listar(){
+    private void listar()
+    {
         OrdemServicoDAO dao = new OrdemServicoDAO();
         List<OrdemServico> list = dao.getList();
         for (OrdemServico o : list){
@@ -53,21 +58,27 @@ public class OrdemServicoMenu {
                     + " | DataFechamento: " + o.getDataFechamento());
         }
     }
-    private void incluir(Scanner sc){
+
+    private void incluir(Scanner sc)
+    {
         int cod = 0;
         int prest = 0;
         int uni = 0;
         float val = 0;
         System.out.println("INCLUIR UMA ORDEM DE SERVIÇO:");
         System.out.println("Codigo:");
-        try{
+        try
+        {
             String codigo = sc.nextLine();
             System.out.println("cod");
-            if (validarStr(codigo, "Codigo")){
+            if (validarStr(codigo, "Codigo"))
+            {
                 return;
             }
             cod = Integer.parseInt(codigo);
-        }catch (Exception e){
+        }
+        catch (Exception e)
+        {
             e.printStackTrace();
             System.out.println("Codigo deve ser um numero");
             return;

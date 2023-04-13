@@ -1,9 +1,14 @@
 package projetos.estruturaSequencial;
+
 import java.util.Scanner;
 
-public class Scanner
+import projetos.Projeto;
+
+public class ScannerExemplo extends Projeto
 {
-    public static void main(String[] args) {
+    @Override
+    public void Executar()
+    {
         System.out.println("Digite um 3 números e entre eles aperte a tecla ENTER");
         Scanner sc = new Scanner(System.in);
         System.out.println("Dados Digitados: ");
@@ -14,7 +19,5 @@ public class Scanner
         System.out.println(s1);
         System.out.println(s2);
         System.out.println(s3);
-
-        sc.close();
     }
 }

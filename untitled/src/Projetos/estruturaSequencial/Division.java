@@ -1,7 +1,12 @@
 package projetos.estruturaSequencial;
-public class Division {
-    public static void main(String[] args) throws Exception {
 
+import projetos.Projeto;
+
+public class Division extends Projeto
+{
+    @Override
+    public void Executar()
+    {
         int a, b;
         double result;
 

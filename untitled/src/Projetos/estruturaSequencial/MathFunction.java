@@ -1,6 +1,12 @@
 package projetos.estruturaSequencial;
-public class MathFunction {
-    public static void main(String[] args) {
+
+import projetos.Projeto;
+
+public class MathFunction extends Projeto
+{
+    @Override
+    public void Executar()
+    {
         double x = 3.0;
         double y = 4.0;
         double z = -5.0;

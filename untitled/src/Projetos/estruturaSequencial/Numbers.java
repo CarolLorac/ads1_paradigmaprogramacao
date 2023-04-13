@@ -1,6 +1,12 @@
 package projetos.estruturaSequencial;
-public class Numbers {
-    public static void main(String[] args) throws Exception {
+
+import projetos.Projeto;
+
+public class Numbers extends Projeto
+{
+    @Override
+    public void Executar()
+    {
         int x, y;
 
         x = 5;

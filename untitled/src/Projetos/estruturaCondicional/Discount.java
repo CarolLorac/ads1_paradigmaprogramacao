@@ -1,8 +1,13 @@
 package projetos.estruturaCondicional;
 import java.util.Scanner;
 
-public class Discount {
-    public static void main(String[] args) {
+import projetos.Projeto;
+
+public class Discount extends Projeto
+{
+    @Override
+    public void Executar() 
+    {
         System.out.println("Digite o valor em R$");
         Scanner sc = new Scanner(System.in);
 

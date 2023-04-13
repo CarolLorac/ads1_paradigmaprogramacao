@@ -1,6 +1,12 @@
 package projetos.estruturaCondicional;
-public class DemoDoublePrice {
-    public static void main(String[] args) {
+
+import projetos.Projeto;
+
+public class DemoDoublePrice extends Projeto
+{
+    @Override
+    public void Executar() 
+    {
         double preco = 25;
         double desconto;
 

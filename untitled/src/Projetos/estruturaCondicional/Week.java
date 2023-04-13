@@ -1,8 +1,13 @@
 package projetos.estruturaCondicional;
 import java.util.Scanner;
 
-public class Week {
-    public static void main(String[] args) {
+import projetos.Projeto;
+
+public class Week extends Projeto
+{
+    @Override
+    public void Executar() 
+    {
         System.out.println("Seja bem-vindo a escolha de dias semanais");
         System.out.println("Digite um número de 1 a 7:");
         Scanner sc = new Scanner(System.in);
@@ -34,6 +39,6 @@ public class Week {
             dia = "O valor digitado é inválido";
         }
         System.out.println("Dia da semana: " + dia);
-        sc.close();
+        
     }
 }

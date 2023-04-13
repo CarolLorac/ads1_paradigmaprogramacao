@@ -1,12 +1,20 @@
 package projetos.daoCRUD;
 import java.util.Scanner;
 
-public class DaoCRUD 
+import projetos.Projeto;
+
+public class DaoCRUD extends Projeto
 {
-    public void Execute() 
+    @Override
+    public void Executar() 
     {
         Scanner sc = new Scanner(System.in);
-        while (true) {
+        
+        System.out.println("\n***********************");
+        System.out.println("DAO/CRUD\n");
+
+        while (true) 
+        {
             System.out.println("Controle de Ordem de Servico");
             System.out.println("1 - Prestador");
             System.out.println("2 - Unidade da Empresa");
@@ -14,25 +22,37 @@ public class DaoCRUD
             System.out.println("4 - Ordem de Servico");
             System.out.println("0 - Sair");
             String opcao = sc.nextLine();
-            if (opcao.equals("1")) {
+
+            if (opcao.equals("1")) 
+            {
                 PrestadorMenu p = new PrestadorMenu();
                 p.menu(sc);
-            } else if (opcao.equals("2")) {
+            } 
+            else if (opcao.equals("2")) 
+            {
                 UnidadeEmpresaMenu u = new UnidadeEmpresaMenu();
                 u.menu(sc);
-            }else if(opcao.equals("3")){
+            }
+            else if(opcao.equals("3"))
+            {
                 TipoServicoMenu t = new TipoServicoMenu();
                 t.menu(sc);
-            }else if(opcao.equals("4")){
+            }
+            else if(opcao.equals("4"))
+            {
                 OrdemServicoMenu o = new OrdemServicoMenu();
                 o.menu(sc);
-            } else if (opcao.equals("0")) {
+            } 
+            else if (opcao.equals("0")) 
+            {
                 break;
-            } else {
+            } 
+            else 
+            {
                 System.out.println("Opcao nao conhecida");
             }
         }
-        sc.close();
+        
         System.out.println("Programa encerrado.");
     }
 

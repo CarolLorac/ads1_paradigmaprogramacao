@@ -2,11 +2,16 @@ package projetos.polimorfismo;
 import java.util.ArrayList;
 import java.util.List;
 
+import projetos.Projeto;
+
 // Teste de Polimorfismo
-public class Polimorfismo 
+public class Polimorfismo extends Projeto
 {
+    @Override 
     public void Executar() 
     {
+        System.out.println("\n***********************");
+        System.out.println("POLIMORFISMO\n");
         //Explicação professor:
         System.out.println("polimorfismo: Soma 10+20:");
         Execute ex = new Soma();

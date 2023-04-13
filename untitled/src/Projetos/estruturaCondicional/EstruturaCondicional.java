@@ -1,24 +1,28 @@
 package projetos.estruturaCondicional;
-import java.util.Locale;
-import java.util.Scanner;
 
-public class EstruturaCondicional 
+import projetos.Projeto;
+
+public class EstruturaCondicional extends Projeto
 {
-    public void Executar() 
+    @Override
+    public void Executar()
     {
-        Locale.setDefault(Locale.US);
-        System.out.println("Digite o valor em R$");
-        Scanner sc = new Scanner(System.in);
-
-        int minutos = sc.nextInt();
-
-        double conta = 50.0;
-        if(minutos > 100) {
-            conta += (minutos - 100) * 2.0;
-        }
-
-        System.out.printf("Valor da conta R$ %.2f%n", conta);
-
-        sc.close();
+        System.out.println("\n***********************");
+        System.out.println("ESTRUTURA CONDICIONAL");
+        System.out.println("\nAccount Value: ");
+        Run(new AccountValue());
+        System.out.println("\nDemoDoublePrice: ");
+        Run(new DemoDoublePrice());
+        System.out.println("\nDiscount: ");
+        Run(new Discount());
+        System.out.println("\nWeek: ");
+        Run(new Week());
+        System.out.println("\nWeekSwitchCase: ");
+        Run(new WeekSwitchCase());
+    }   
+    
+    public static void Run(Projeto projeto)
+    {
+        projeto.Executar();
     }
 }
