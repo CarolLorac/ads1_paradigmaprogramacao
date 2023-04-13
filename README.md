@@ -1,4 +1,4 @@
-## **ASD 1 - Paradgimas da Programação**
+## **Atividade avaliativa 1 - Paradgimas da Programação**
 ### **Eng. Computação - 3° Semestre**
 <p></p>
 Esse repositório contém todos os exercícios realizados pelo professor Francisco durante as aulas do primeiro bimestre de 2023.
