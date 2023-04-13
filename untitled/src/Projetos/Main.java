@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import projetos.ordenacao.Ordenacao;
 import projetos.animais.ProjetoAnimais;
+import projetos.bancoInterface.BancoTeste;
 import projetos.chatbot.ChatBot;
 import projetos.daoCRUD.DaoCRUD;
 import projetos.encapsulamento.TitularConta;
@@ -18,6 +19,7 @@ public class Main
     public static void main(String[] args) 
     {
         Scanner sc = new Scanner(System.in);
+        BancoTeste bancoTeste = new BancoTeste();
         int exercicio;
 
         do 
@@ -43,7 +45,7 @@ public class Main
                     Run(new ProjetoAnimais());
                     break;
                 case 2:
-                    Run(new Ordenacao());
+                    System.out.println("\nVeja o código em projetos > bancoInterface! :)");
                     break;
                 case 3:
                     Run(new ChatBot());
