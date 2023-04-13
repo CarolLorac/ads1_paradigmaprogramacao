@@ -1,4 +1,4 @@
-package projetos.animais.entities;
+package projetos.animais;
 
 public class Aquatico extends Animais // Herança
 {

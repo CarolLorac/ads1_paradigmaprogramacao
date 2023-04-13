@@ -1,8 +1,5 @@
-package projetos.animais;// package Aula1;
-
+package projetos.animais;
 import projetos.Projeto;
-import projetos.animais.entities.Aquatico;
-import projetos.animais.entities.Mamifero;
 
 public class ProjetoAnimais extends Projeto
 {

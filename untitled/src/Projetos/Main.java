@@ -1,13 +1,16 @@
 package projetos;
 
 import java.util.Scanner;
+
+import projetos.ordenacao.Ordenacao;
 import projetos.animais.ProjetoAnimais;
-import projetos.animais.entities.Animais;
 import projetos.chatbot.ChatBot;
 import projetos.daoCRUD.DaoCRUD;
+import projetos.encapsulamento.TitularConta;
 import projetos.estruturaCondicional.EstruturaCondicional;
 import projetos.estruturaSequencial.EstruturaSequencial;
 import projetos.estruturasRepeticao.EstruturasRepeticao;
+import projetos.loja.Loja;
 import projetos.polimorfismo.Polimorfismo;
 
 public class Main
@@ -21,13 +24,16 @@ public class Main
         {
             System.out.println("\nDigite qual exercício você deseja: ");
             System.out.println("1 - Animais");
-            System.out.println("2 - Banco");
+            System.out.println("2 - Banco (Interface)");
             System.out.println("3 - ChatBot");
             System.out.println("4 - DAO/CRUD");
-            System.out.println("5 - Estrutura Condicional");
-            System.out.println("6 - Estrutura Sequencial");
-            System.out.println("7 - Estrutura Repetição");
-            System.out.println("8 - Polimorfismo");
+            System.out.println("5 - Encapsulamento");
+            System.out.println("6 - Estrutura Condicional");
+            System.out.println("7 - Estrutura Sequencial");
+            System.out.println("8 - Estrutura Repetição");
+            System.out.println("9 - Loja");
+            System.out.println("10 - Ordenação (array)");
+            System.out.println("11 - Polimorfismo");
             System.out.println("0 - Sair");
             exercicio = sc.nextInt();
 
@@ -37,7 +43,7 @@ public class Main
                     Run(new ProjetoAnimais());
                     break;
                 case 2:
-                    
+                    Run(new Ordenacao());
                     break;
                 case 3:
                     Run(new ChatBot());
@@ -46,15 +52,24 @@ public class Main
                     Run(new DaoCRUD());
                     break;
                 case 5:
-                    Run(new EstruturaCondicional());
+                    Run(new TitularConta());
                     break;
                 case 6:
-                    Run(new EstruturaSequencial());
+                    Run(new EstruturaCondicional());
                     break;
                 case 7:
-                    Run(new EstruturasRepeticao());
+                    Run(new EstruturaSequencial());
                     break;
                 case 8:
+                    Run(new EstruturasRepeticao());
+                    break;
+                case 9:
+                    Run(new Loja());
+                    break;
+                case 10:
+                    Run(new Ordenacao());
+                    break;
+                case 11:
                     Run(new Polimorfismo());
                     break;
                 case 0:
